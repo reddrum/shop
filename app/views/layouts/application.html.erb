@@ -19,6 +19,9 @@
     <div id="columns">
       <div id="side">
         <ul>
+          <% if @count %>
+            <p><%= pluralize( @count, 'time' ) %></p>
+          <% end %>  
           <li><a href="http://www....">Home</a></li>
           <li><a href="http://www..../faq">Questions</a></li>
           <li><a href="http://www..../news">News</a></li>
